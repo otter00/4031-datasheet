@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/styles/app.css">
+    <link rel="stylesheet" href="assets/styles/normalize.css">
+
+    <title>4031 DataSheet</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <form name="form1" id="login__form" method="post">
+            <div class="login-form__container" style="background-image: url('assets/images/suai-space.jpg');">
+                <div class="login-form__wrapper">
+                    <span class="login-form__title">4031</span>
+
+                    <div class="login-form validate-form">
+
+                        <div class="wrap-input validate-input" data-validate="Enter username">
+                            <input class="input" id="login__input" type="text" name="username" minlength=2
+                                placeholder="Type username" autofocus required>
+                        </div>
+
+                        <div class="wrap-input validate-input" data-validate="Enter password">
+                            <input class="input" id="password__input" type="password" minlength=5 name="password"
+                                placeholder="Type password" required>
+                        </div>
+
+                        <div class="wrap-input validate-input" data-validate="Enter email">
+                            <input class="input" id="email__input" type="email" name="email" placeholder="Type email"
+                                required>
+                        </div>
+
+                        <div class="wrap-input validate-input" data-validate="Enter your phone">
+                            <input class="input" id="phone__input" type="tel" pattern="\d{6,20}" minlength=6
+                                maxlength=20 name="phone number" placeholder="Type your phone" required>
+                        </div>
+
+                        <div class="container-login-form__btn">
+                            <button class="login-form__btn" type="submit">Sign
+                                up
+                            </button>
+                        </div>
+
+                        <div id="errorMsg" class="errors__info"></div>
+                    </div>
+
+                </div>
+            </div>
+        </form>
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
