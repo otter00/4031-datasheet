@@ -22,6 +22,9 @@ html body .container {
 a {
   text-decoration: none;
 }
+a:hover {
+  cursor: pointer;
+}
 
 p,
 h1,
@@ -32,7 +35,7 @@ h2 {
 /*      FORM STYLES     */
 .login-form__container {
   width: 100%;
-  min-height: 110vh;
+  min-height: 100vh;
   /*     ELEMS-POSITIONING    */
   display: flex;
   justify-content: center;
@@ -55,11 +58,12 @@ h2 {
   padding: 30px 0 50px 0;
 }
 .login-form__container .login-form__wrapper .login-form__title {
-  padding-top: 15px;
+  padding-bottom: 15px;
   letter-spacing: 10px;
   font-family: Ubuntu-Bold;
-  font-size: 48px;
-  color: black;
+  font-size: 56px;
+  color: white;
+  text-shadow: 4px 4px 5px rgb(192, 0, 192), 0 0 2em blue, 0 0 0.2em blue;
   line-height: 1.2;
   text-align: center;
   text-transform: uppercase;
@@ -68,7 +72,7 @@ h2 {
 .login-form__container .login-form__wrapper .login-form {
   width: 100%;
   border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
   padding: 5px 0 33px 0;
 }
 .login-form__container .login-form__wrapper .login-form .wrap-input {
@@ -101,17 +105,17 @@ h2 {
   font-family: Ubuntu-Bold;
   display: flex;
   justify-content: center;
-  font-size: 18px;
+  font-size: 21px;
   color: white;
   line-height: 1.2;
   text-transform: uppercase;
   align-items: center;
   padding: 0 20px;
-  min-width: 160px;
-  height: 42px;
-  border-radius: 21px;
+  min-width: 190px;
+  height: 50px;
+  border-radius: 24px;
   position: relative;
-  background: -webkit-linear-gradient(left, #2d0159, #6d2280, #120064);
+  background: -webkit-linear-gradient(left, #a900c3, #6d2280, #120064);
 }
 
 /*      SUB-GENERAL     */
@@ -124,7 +128,12 @@ input {
   border: none;
 }
 input::placeholder {
+  text-transform: uppercase;
+  font-size: 24px;
   color: white;
+}
+input:hover {
+  cursor: pointer;
 }
 
 button,
@@ -141,14 +150,4 @@ textarea {
 /*     CURSOR-SETTINGS    */
 .login-form__btn:hover {
   cursor: pointer;
-}
-
-#errorMsg {
-  display: flex;
-  justify-content: center;
-  font-family: Ubuntu-Bold;
-  font-size: 21px;
-  font-weight: 500;
-  font-style: italic;
-  color: rgb(127, 3, 3);
 }/*# sourceMappingURL=app.css.map */
